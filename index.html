@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Handge - IT Engineer Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="gemini-svg.svg">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- GSAP & Plugins CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">ROHIT <span class="highlight">HANDGE</span></div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#internship">Internship</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#contact" class="contact-btn">Let's Talk</a>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <div class="hero-scroll-wrapper">
+    <div class="hero-pinned">
+      
+      <div class="glow-bg" id="glow"></div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="tagline" style="color: rgb(133, 133, 133);"><span class="highlight"> ASPIRING SOFTWARE</span> ENGINEER</p> <br>
+          <h1 class="main-title">IMAGINE <span class="highlight">ENGINEER</span> DELIVER</h1>
+          <p class="subtitle">Building high-performance web applications and scalable software systems with modern architecture.</p>
+          
+          <div class="hero-cta-group">
+            <div class="social-links">
+              <a href="Rohit_Handge_BTech_IT.pdf" target="_blank" rel="noopener noreferrer" class="hero-resume-btn"><i class="fa-solid fa-file-pdf"></i> Resume</a>
+              <a href="https://github.com/rohit-handge" target="_blank" class="social-btn" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/rohit-handge-855576289/" target="_blank" class="social-btn" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="#contact" class="social-btn" aria-label="Send Email">
+                <svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-stage">
+          <div class="photo-container">
+            <img src="image.png" alt="Rohit Handge Pose" class="hero-img img-full" id="imgFull">
+            <img src="imagecopy.png" alt="Rohit Handge Close-up" class="hero-img img-close" id="imgClose">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+ <!-- ==================== ABOUT / ENGINEERING APPROACH ==================== -->
+
+<section class="about-pillars-section" id="about">
+
+  <div class="about-header fade-up">
+
+    <span class="section-badge">
+      Engineering Approach
+    </span>
+
+    <h2 class="about-title">
+      How I Approach Engineering
+    </h2>
+
+    <p class="about-subtitle">
+      I focus on building practical software that solves real problems,
+      scales beyond a prototype, and is backed by strong engineering fundamentals.
+    </p>
+
+  </div>
+
+
+  <div class="pillars-grid">
+
+
+    <!-- 01 -->
+    <div class="pillar-card fade-up">
+
+      <div class="pillar-top">
+        <span class="pillar-index">01</span>
+        <span class="pillar-tag">BUILD</span>
+      </div>
+
+      <div class="pillar-icon">
+        <i class="fa-solid fa-layer-group"></i>
+      </div>
+
+      <h3 class="pillar-heading">
+        Full-Stack & Product Engineering
+      </h3>
+
+      <p class="pillar-desc">
+        I build complete applications from interface to backend,
+        database, APIs, authentication, deployment, and the systems
+        that connect everything together.
+      </p>
+
+      <div class="pillar-line"></div>
+      <div class="pillar-glow"></div>
+
+    </div>
+
+
+    <!-- 02 -->
+    <div class="pillar-card fade-up">
+
+      <div class="pillar-top">
+        <span class="pillar-index">02</span>
+        <span class="pillar-tag">SOLVE</span>
+      </div>
+
+      <div class="pillar-icon">
+        <i class="fa-solid fa-brain"></i>
+      </div>
+
+      <h3 class="pillar-heading">
+        AI, Data & Intelligent Systems
+      </h3>
+
+      <p class="pillar-desc">
+        I combine machine learning, data analysis, and AI-driven
+        logic with traditional software engineering to turn data
+        into useful and actionable systems.
+      </p>
+
+      <div class="pillar-line"></div>
+      <div class="pillar-glow"></div>
+
+    </div>
+
+
+    <!-- 03 -->
+    <div class="pillar-card fade-up">
+
+      <div class="pillar-top">
+        <span class="pillar-index">03</span>
+        <span class="pillar-tag">GROW</span>
+      </div>
+
+      <div class="pillar-icon">
+        <i class="fa-solid fa-code"></i>
+      </div>
+
+      <h3 class="pillar-heading">
+        Problem Solving & Continuous Growth
+      </h3>
+
+      <p class="pillar-desc">
+        I strengthen my fundamentals through DSA, competitive problem
+        solving, projects, hackathons, and continuously experimenting
+        with new technologies.
+      </p>
+
+      <div class="pillar-line"></div>
+      <div class="pillar-glow"></div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+
+  <!-- 2. TECH STACK -->
+  <div class="tech-pinned-wrapper fade-up" id="skills">
+    <div class="tech-pinned-sticky">
+      <h2 class="heading">Tech Stack</h2>
+      <p class="section-subtitle">Scroll down vertically to dynamically move through technical skill sets</p>
+
+      <div class="tech-track-outer">
+        <div class="tech-track" id="techTrack">
+          <!-- Card 1 -->
+          <div class="tech-scroll-card fade-up">
+            <span class="card-step">01</span>
+            <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Frontend Development</h3>
+            <div class="tech-list">
+              <div class="tech-item"><span>HTML5</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>CSS3</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>JavaScript</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>React.js</span><span class="tag-status">Learning</span></div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="tech-scroll-card">
+            <span class="card-step">02</span>
+            <div class="card-icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3>Core Programming</h3>
+            <div class="tech-list">
+              <div class="tech-item"><span>C</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>C++</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>Data Structures</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>OOP Concepts</span><span class="level-dot"></span></div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="tech-scroll-card">
+            <span class="card-step">03</span>
+            <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Backend Development</h3>
+            <div class="tech-list">
+              <div class="tech-item"><span>Node.js</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>Express.js</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>REST APIs</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>Backend Logic</span><span class="level-dot"></span></div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="tech-scroll-card">
+            <span class="card-step">04</span>
+            <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Databases & Cloud</h3>
+            <div class="tech-list">
+              <div class="tech-item"><span>MySQL</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>MongoDB</span><span class="tag-status">Learning</span></div>
+              <div class="tech-item"><span>AWS Basics</span><span class="level-dot"></span></div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="tech-scroll-card">
+            <span class="card-step">05</span>
+            <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Tools & Environment</h3>
+            <div class="tech-list">
+              <div class="tech-item"><span>Git</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>GitHub</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>VS Code</span><span class="level-dot"></span></div>
+              <div class="tech-item"><span>Vercel / Netlify</span><span class="level-dot"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<section class="projects-section" id="projects">
+  <h2 class="heading" style="padding-bottom:5rem;">Featured Projects</h2>
+  <div class="projects-grid">
+
+    <!-- CARD 1: TattvaAI -->
+    <div class="project-card fade-up">
+      <div class="card-image-wrapper">
+        <img src="tattvaai2.png" alt="TattvaAI Platform" class="project-img">
+        
+        <div class="project-info-panel">
+          <button class="panel-close-btn" onclick="toggleInfo(this)">&times;</button>
+          <div class="tech-stack">
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Python</span>
+          </div>
+          <p class="project-desc">
+            Secure SaaS platform for online exam proctoring, automated coding evaluations, and real-time AI performance monitoring.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-content">
+        <h3 class="project-title">TattvaAI</h3>
+        
+        <div class="card-actions">
+          <a href="https://tattvaai.onrender.com" target="_blank" class="btn btn-primary">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Demo
+          </a>
+          <!-- Icon-Only GitHub Button -->
+          <a href="https://github.com/rohit-handge" target="_blank" class="btn btn-icon-only btn-secondary" aria-label="GitHub Repository">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <!-- Plus Icon Button -->
+          <button class="info-btn" aria-label="Project Details" onclick="toggleInfo(this)">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2: YantraDrishti -->
+    <div class="project-card fade-up">
+      <div class="card-image-wrapper">
+        <img src="YantraDrishti.png" alt="YantraDrishti Platform" class="project-img">
+        
+        <div class="project-info-panel">
+          <button class="panel-close-btn" onclick="toggleInfo(this)">&times;</button>
+          <div class="tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Scikit-Learn</span>
+            <span class="tech-badge">Streamlit</span>
+          </div>
+          <p class="project-desc">
+            Predictive maintenance software analyzing equipment telemetry to forecast machine degradation and schedule timely repairs.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-content">
+        <h3 class="project-title">YantraDrishti</h3>
+        
+        <div class="card-actions">
+          <a href="https://rohit-handge-yantradrishti-app-bnpzor.streamlit.app/" target="_blank" class="btn btn-primary">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Demo
+          </a>
+          <a href="https://github.com/rohit-handge" target="_blank" class="btn btn-icon-only btn-secondary" aria-label="GitHub Repository">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <button class="info-btn" aria-label="Project Details" onclick="toggleInfo(this)">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Iteron Club -->
+    <div class="project-card fade-up">
+      <div class="card-image-wrapper">
+        <img src="iteron2.png" alt="Iteron Club Platform" class="project-img">
+        
+        <div class="project-info-panel">
+          <button class="panel-close-btn" onclick="toggleInfo(this)">&times;</button>
+          <div class="tech-stack">
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">EJS</span>
+            <span class="tech-badge">MySQL</span>
+          </div>
+          <p class="project-desc">
+            Event and member management portal for technical student clubs with integrated event check-ins and certificate delivery.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-content">
+        <h3 class="project-title">Iteron Club</h3>
+        
+        <div class="card-actions">
+          <a href="#" target="_blank" class="btn btn-primary">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Demo
+          </a>
+          <a href="https://github.com/rohit-handge" target="_blank" class="btn btn-icon-only btn-secondary" aria-label="GitHub Repository">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <button class="info-btn" aria-label="Project Details" onclick="toggleInfo(this)">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<br> <br>
+  <!-- INTERNSHIP HIGHLIGHT SECTION -->
+  <section class="internship-section fade-up" id="internship">
+    <div class="heading">Internship Experience</div>
+    <p class="section-subtitle">Real-world analytics & sustainability project</p>
+
+    <div class="internship-container">
+      <!-- Left Column: Details -->
+      <div class="internship-details">
+        <div class="internship-badge">Skills4Future Program</div>
+        <h2>AI & Data Analytics Intern</h2>
+        <p class="internship-org">
+          <strong>Edunet Foundation</strong> <br>
+          <span>In collaboration with AICTE & Shell</span>
+        </p>
+        <p class="internship-period">📅 Dec 16, 2024 - Jan 16, 2025</p>
+
+        <div class="internship-description">
+          <p><strong>Key Project:</strong> Energy Consumption Trend Analysis</p>
+          <p>
+            Analyzed complex energy datasets using <strong>Power BI</strong> to uncover actionable sustainability insights. Applied green skills and data visualization techniques under industry mentorship.
+          </p>
+        </div>
+
+        <div class="tech-stack">
+          <span class="tech-badge">Power BI</span>
+          <span class="tech-badge">Data Analytics</span>
+          <span class="tech-badge">AI</span>
+          <span class="tech-badge">Green Skills</span>
+        </div>
+      </div>
+
+      <!-- Right Column: Photo Slider -->
+      <div class="internship-slider-wrapper">
+        <div class="slider-viewport">
+          <div class="slider-track" id="internshipTrack">
+            <div class="slide"><img src="internship1.jpg" alt="Internship Certificate 1"></div>
+            <div class="slide"><img src="internship2.jpg" alt="Power BI Dashboard 2"></div>
+          </div>
+        </div>
+
+        <div class="slider-dots" id="sliderDots">
+          <button class="dot active" onclick="goToSlide(0)"></button>
+          <button class="dot" onclick="goToSlide(1)"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+ <br><br>
+  <!-- 4. EDUCATION & PERFORMANCE -->
+  <section class="education-section fade-up" id="education">
+    <h2 class="heading">Education</h2>
+    <p class="section-subtitle">Academic trajectory and semester-wise SGPA trend</p>
+
+    <div class="education-grid-layout">
+      <div class="edu-left-col">
+        <div class="degree-card">
+          <div class="degree-info">
+            <h3>B.Tech. in Information Technology</h3>
+            <h4>Savitribai Phule Pune University (SPPU)</h4>
+            <p>Focus Areas: Data Structures, Web Engineering, DBMS, Software Design.</p>
+          </div>
+          <div class="degree-badge">9.34 CGPA</div>
+        </div>
+
+        <div class="degree-card">
+          <div class="degree-info">
+            <h3>Janta English School & Jr. College Saikheda</h3>
+            <h4>Higher Secondary & Secondary Education</h4>
+            <div class="scores-row">
+              <div class="score-chip">SSC: <span>96.40%</span></div>
+              <div class="score-chip">HSC: <span>80.00%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-container-wrapper">
+        <canvas id="sgpaChart"></canvas>
+      </div>
+    </div>
+  </section>
+<br><br>
+
+
+<!-- CERTIFICATIONS SLIDING SECTION -->
+<section class="cert-slider-section fade-up" id="certifications">
+  <div class="cert-slider-header">
+    <h2 class="heading">Certifications</h2>
+    <p class="section-subtitle">Drag with 2 fingers to scroll</p>
+  </div>
+
+  <div class="cert-slider-wrapper">
+    <div class="cert-slider-track">
+
+         <div class="cert-card-item">
+        <div class="cert-card-number">01</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">Introduction to GenAI</h3>
+        <p class="cert-card-subtitle">AWS 2026</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/awsgenai.png" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/awsgenai.png" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+         <div class="cert-card-item">
+        <div class="cert-card-number">02</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">SPPU Sponsored Seminar</h3>
+        <p class="cert-card-subtitle">ML & DL 2026</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/sppuworkshop.jpeg" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/sppuworkshop.jpeg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+        <div class="cert-card-item">
+        <div class="cert-card-number">03</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">Convergence Hackathon</h3>
+        <p class="cert-card-subtitle">MIBCS Club 2025</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/convergence.jpeg" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/convergence.jpeg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+            <div class="cert-card-item">
+        <div class="cert-card-number">04</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">Byte Quest-AI Vibe Coding Hackathon</h3>
+        <p class="cert-card-subtitle">Ramdeobaba University 2026</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/bytequest.jpeg" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/bytequest.jpeg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+            <div class="cert-card-item">
+        <div class="cert-card-number">05</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">TATA Imagination Challenge</h3>
+        <p class="cert-card-subtitle">(Tata Quiz)Tata Group 2025</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/tataquiz.jpeg" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/tataquiz.jpeg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+            <div class="cert-card-item">
+        <div class="cert-card-number">06</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">Data Science using Python</h3>
+        <p class="cert-card-subtitle">(Workshop)Brainovision Solutions 2024</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/brainovision.jpg" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/brainovision.jpg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+        <div class="cert-card-item">
+        <div class="cert-card-number">07</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">Tennis Ball Cricket</h3>
+        <p class="cert-card-subtitle">Maffick 2026</p>
+
+        <div class="cert-img-box">
+          <img src="cricket.png" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="cricket.png" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="cert-card-item">
+        <div class="cert-card-number">08</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">Python</h3>
+        <p class="cert-card-subtitle">Spoken Tutorial IIT Bomabay 2025</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/python.png" alt="AI & Data Analytics Certificate">
+        </div>
+
+       <div class="cert-card-actions">
+          View
+          <a href="certificates/python.png" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="cert-card-item">
+        <div class="cert-card-number">09</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">Java</h3>
+        <p class="cert-card-subtitle">Spoken Tutorial IIT Bomabay 2025</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/java.jpg" alt="Data Structures Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/java.jpg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="cert-card-item">
+        <div class="cert-card-number">10</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">C++</h3>
+        <p class="cert-card-subtitle">Spoken Tutorial IIT Bomabay 2025</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/cpp.jpg" alt="Full Stack Web Dev Certificate">
+        </div>
+
+  <div class="cert-card-actions">
+          View
+          <a href="certificates/cpp.jpg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+       <div class="cert-card-item">
+        <div class="cert-card-number">11</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">Digital Social Media Marketing</h3>
+        <p class="cert-card-subtitle">MKCL iLike 2025</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/dsm_1.jpg" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/dsm_1.jpg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="cert-card-item">
+        <div class="cert-card-number">12</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">4 Week Virtual Internship</h3>
+        <p class="cert-card-subtitle">AI & Data Analytics 2025</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/edunet.jpg" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/edunet.jpg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+       <div class="cert-card-item">
+        <div class="cert-card-number">13</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">ABB India Ltd Satpur</h3>
+        <p class="cert-card-subtitle">Physical Stock Audit 2024</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/abb.jpg" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/abb.jpg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+       <div class="cert-card-item">
+        <div class="cert-card-number">14</div>
+        <div class="cert-card-accent"></div>
+        <h3 class="cert-card-title">2nd Consolation</h3>
+        <p class="cert-card-subtitle">ISTE Essay Writing 2023</p>
+
+        <div class="cert-img-box">
+          <img src="certificates/essay.jpg" alt="Cloud Fundamentals Certificate">
+        </div>
+
+        <div class="cert-card-actions">
+          View
+          <a href="certificates/essay.jpg" target="_blank" rel="noopener noreferrer" class="action-icon" title="View Document">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<br><br>
+  <!-- 5. ACHIEVEMENTS SHOWCASE -->
+   <div class="achievements fade-up">
+  <h2 class="heading">Moments & Milestones</h2>
+  <p class="section-subtitle">A visual highlight of key accomplishments, competitions, and recognitions</p>
+  <section class="showcase-section" id="achievements">
+    <div class="container">
+      <div class="left-display">
+        <div class="display-frame">
+          <img id="mainDisplayImg" src="" alt="Featured Achievement" class="display-img">
+          <div class="img-overlay" id="imgOverlay">
+            <h3 id="descTitle">Achievement Title</h3>
+            <p id="descText">Description text goes here.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-ladder">
+        <div class="ladder-mask">
+          <div class="ladder-scroll-track" id="ladderTrack"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  <!-- 6. CONTACT SECTION -->
+  <section class="contact-section fade-up" id="contact">
+    <h2 class="heading">Get In Touch</h2>
+    <p class="section-subtitle">Open for software engineering internships, projects, and collaborations</p>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="info-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>rohithandge1122@gmail.com</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Location</h4>
+            <p>Nashik, Maharashtra, India</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-user-check"></i>
+          <div>
+            <h4>Status</h4>
+            <p>Open for Software Engineering Opportunities</p>
+          </div>
+        </div>
+      </div>
+      
+<form action="https://formspree.io/f/xzepwzgz" method="POST" class="contact-form" id="contactForm">
+  <div class="input-group">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+  </div>
+  <input type="text" name="subject" placeholder="Subject" required />
+  <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+  <button type="submit" class="submit-btn">
+    Send Message <i class="fa-solid fa-paper-plane"></i>
+  </button>
+</form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Developed By Rohit Handge 2026</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="index.js"></script>
+  <!-- Three.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</body>
+</html>
